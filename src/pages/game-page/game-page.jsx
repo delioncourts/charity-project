@@ -102,8 +102,8 @@ const GamePage = () => {
         ))}
       </div>
       <p className={styles.moves}>Сделано ходов: {moves}</p>
-      <button className={styles.btn_start} onClick={shuffleCards}>
-        <img src="../../../public/Vector.png"></img>
+      <button className={styles.newbutton} onClick={shuffleCards}>
+      <p className={styles.moves}>Начать игру</p>
       </button>
     </div>
   );

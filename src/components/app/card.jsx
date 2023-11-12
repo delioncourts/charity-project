@@ -1,15 +1,17 @@
 import React from "react";
+import styles from "./card.module.css";
 
 const Card = ({ card, cover, handleCompare, flipped }) => {
   const handleClick = () => {
     handleCompare(card);
   };
+  const flippedCard = flipped ? styles.flipped : "";
   return (
-    <div className="card">
-      <div className={flipped ? "flipped" : ""}>
-        <img className="front" src={card.src} alt="card front"></img>
+    <div className={styles.card}>
+      <div className={`${flippedCard}`}>
+        <img className={styles.front} src={card.src} alt="card front"></img>
         <img
-          className="cover"
+          className={styles.cover}
           src={cover}
           onClick={handleClick}
           alt="card cover"

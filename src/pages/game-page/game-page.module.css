@@ -1,3 +1,39 @@
 .main {
-    background-color: #238DAB;
+  background-color: #238dab;
+  height: 100vh;
+}
+
+.name {
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+}
+
+.moves {
+  text-align: center;
+  font-size: 2rem;
+}
+.cards_container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 50px 0;
+  padding-left: 100px;
+}
+
+.btn_start {
+  display: flex;
+  margin: 0 auto;
+  background-color: #238dab;
+  border: none;
+  color: #fff;
+  background-image: url("../../../public/Decor.png");
+}
+
+.white_rectangle {
+  background-image: url("../../../public/Rectangle_white.png");
 }

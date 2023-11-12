@@ -2,18 +2,26 @@ import Card from "../../components/app/card";
 import styles from "./game-page.module.css";
 import { useEffect, useState } from "react";
 
-const img1 = "/assets/img1.jpg";
-const img2 = "/assets/img2.jpg";
-const img3 = "/assets/img3.jpg";
-const img4 = "/assets/img4.jpg";
+const img1 = "../../../public/cards/icon_1.png";
+const img2 = "../../../public/cards/icon_2.png";
+const img3 = "../../../public/cards/icon_3.png";
+const img4 = "../../../public/cards/icon_4.png";
+const img5 = "../../../public/cards/icon_5.png";
+const img6 = "../../../public/cards/icon_6.png";
+const img7 = "../../../public/cards/icon_7.png";
+const img8 = "../../../public/cards/icon_8.png";
 
-const cover = "/assets/cover.jpg";
+const cover = "../../../public/cover.png";
 
 const allCards = [
   { src: img1, matched: false },
   { src: img2, matched: false },
   { src: img3, matched: false },
   { src: img4, matched: false },
+  { src: img5, matched: false },
+  { src: img6, matched: false },
+  { src: img7, matched: false },
+  { src: img8, matched: false },
 ];
 
 const GamePage = () => {
@@ -75,9 +83,11 @@ const GamePage = () => {
 
   //render
   return (
-    <div>
-      <h1>Memory Game</h1>
-      <div className="cards-container">
+    <div className={styles.main}>
+      <h1 className={styles.name}>Memory Game</h1>
+      <div className={styles.cards_container}>
+        {/* <div className={styles.white_rectangle}></div>
+        <div className={styles.blue_rectangle}></div> */}
         {curCards.map((card) => (
           <Card
             key={card.id}
@@ -90,8 +100,10 @@ const GamePage = () => {
           />
         ))}
       </div>
-      Moves made: {moves}
-      <button onClick={shuffleCards}>Start over </button>
+      <p className={styles.moves}>Moves made: {moves}</p>
+      <button className={styles.btn_start} onClick={shuffleCards}>
+        <img src="../../../public/Vector.png"></img>
+      </button>
     </div>
   );
 };

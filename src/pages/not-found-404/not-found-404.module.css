@@ -1,11 +1,66 @@
 .main {
     background-color: #238DAB;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.link {
-    text-decoration: none;
+.title {
+    margin: 0;
+    padding: 0;
+    color: #ECF8FB;
+    font-family: 'Snobel';
+    font-size: 69px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+
+.subtitle {
+    margin: 0;
+    padding: 0;
+    color: #ECF8FB;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container{
+    max-width: 214px;
 }
 
 .link:hover {
-    color: green;
+    color: opacity .5;
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        max-width: 440px;
+    }
+
+    .title{
+        font-size: 69px;
+    }
+
+    .subtitle{
+        font-size: 46px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container{
+        max-width: 660px;
+    }
+
+    .title{
+        font-size: 138px;
+    }
+
+    .subtitle{
+        font-size: 69px;
+    }
 }

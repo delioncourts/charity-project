@@ -8,6 +8,11 @@ Memory game - игра с карточками, которые открываю�
 
 Проект создан на React с Vite.
 
+Наш проект: https://charity-project-48.vercel.app/
+
+Ссылка на [Figma](https://www.figma.com/file/oOLscXHsIILl5YaTyqOwsS/Ccharity-hackaton-Team-%2348?type=design&node-id=32-1939&mode=design&t=Astx2JFQdzJHxloa-0).
+
+
 ## Участники (ник в телеграме и на GitHub)
 
 Вероника (frontend developer) @mysterynotsolved / delioncourts
@@ -19,5 +24,14 @@ Memory game - игра с карточками, которые открываю�
 
 ## Как запустить 
 
+Склонировать репозиторий: 
+
+git clone https://github.com/delioncourts/charity-project.git
+
+
+Установить зависимости: 
+
 npm install 
+
+Запустить локально:
 npm run dev

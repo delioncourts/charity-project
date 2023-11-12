@@ -47,7 +47,7 @@
 }
 
 .link:hover {
-    color: opacity .5;
+    opacity: .5;
 }
 
 @media screen and (min-width: 768px) {

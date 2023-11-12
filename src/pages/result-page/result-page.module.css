@@ -6,3 +6,53 @@
     justify-content: center;
     align-items: center;
 }
+
+.logo {
+    width: 236px;
+    height: 118px;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Shnobel';
+    font-size: 69px;
+    color: #ECF8FB;
+    padding-top: 40px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.subtitle {
+    margin: 0;
+    padding: 0;
+    font-family: 'Klyakson';
+    font-size: 46px;
+    color: #ECF8FB;
+}
+
+.count {
+    margin: 0;
+    padding: 0;
+    font-family: 'Klyakson';
+    font-size: 46px;
+    color: #FCD108;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        width: 200px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .logo {
+        width: 400px;
+        height: 200px;
+    }
+}

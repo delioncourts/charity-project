@@ -34,4 +34,5 @@ git clone https://github.com/delioncourts/charity-project.git
 npm install 
 
 Запустить локально:
+
 npm run dev

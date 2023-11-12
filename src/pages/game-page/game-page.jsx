@@ -1,4 +1,4 @@
-import styles from './main-page.module.css';
+import styles from './game-page.module.css';
 
 const GamePage = () => {
     return (

@@ -1,33 +1,25 @@
-import { useState } from 'react'
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
+import MainPage from '../../pages/main-page/main-page';
+import NotFound from '../../pages/not-found-404/not-found-404';
+import GamePage from '../../pages/game-page/game-page';
+import ResultPage from '../../pages/result-page/result-page';
 
-import './app.css'
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/">
+      <Route index element={<MainPage />} />
+      <Route path="game" element={<GamePage />} />
+      <Route path="result" element={<ResultPage />} />
+      <Route path="*" element={<NotFound />} />
+    </Route>
+  )
+)
 
-function App() {
-  const [count, setCount] = useState(0)
+function App({ routes }) {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-
-        </a>
-        <a href="https://react.dev" target="_blank">
-
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <h2>Test Hello</h2>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <RouterProvider router={router} />
     </>
   )
 }

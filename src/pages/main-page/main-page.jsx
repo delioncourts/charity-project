@@ -1,19 +1,18 @@
 import { Link } from 'react-router-dom';
 
 import styles from './main-page.module.css';
-import logo from '../../assets/logo.png';
+import logo from '../../../public/logo.png';
 
 const MainPage = () => {
     return (
         <main className={styles.main}>
-            <h1 className={styles.title}>Привет!</h1>
-            <img src={logo} alt="логотип команды 48" />
-            <p className={styles.subtitle}>Предлагаем сыграть в игру Memory Game</p>
+            <img className={styles.logo} src={logo} alt="логотип команды 48" />
+            <div className={styles.container}>
+                <p className={styles.subtitle}>Предлагаем сыграть в&nbsp;игру Memory Game</p>
 
-            <Link to='/'>Главная</Link>
-            <Link to='*'>404</Link>
-            <Link to='game'>Игра</Link>
-            <Link to='result'>Результат</Link>
+                <Link to='game' className={styles.link}>НОВАЯ ИГРА</Link>
+                <Link to='*' className={styles.link}>НИНАЖЫМАДЬ!</Link>
+            </div>
         </main>
     )
 }

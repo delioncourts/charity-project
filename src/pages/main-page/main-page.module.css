@@ -7,12 +7,58 @@
     align-items: center;
 }
 
-.title {
-    margin: 0; 
-    padding: 0;
+.logo {
+    width: 236px;
+    height: 118px;
 }
 
-.subtitle{
- margin: 0; 
- padding: 0;
+.subtitle {
+    margin: 0;
+    padding: 0;
+    color: #ECF8FB;
+    font-size: 23px;
+    font-family: 'Shnobel';
+    max-width: 200px;
+}
+
+.link {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+
+    color: #ECF8FB;
+    font-size: 23px;
+    font-family: 'Shnobel';
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        width: 400px;
+        height: 200px;
+    }
+
+    .link{
+        font-size: 69px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .logo {
+        width: 754px;
+        height: 377px;
+    }
+
 }

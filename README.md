@@ -13,6 +13,8 @@ Memory game - игра с карточками, которые открываю�
 Ссылка на [Figma](https://www.figma.com/file/oOLscXHsIILl5YaTyqOwsS/Ccharity-hackaton-Team-%2348?type=design&node-id=32-1939&mode=design&t=Astx2JFQdzJHxloa-0).
 
 
+Дополнительный репозиторий с [логикой](https://github.com/mariaklyass/memory-game), который перенесли в основной 
+
 ## Участники (ник в телеграме и на GitHub)
 
 Вероника (frontend developer) @mysterynotsolved / delioncourts

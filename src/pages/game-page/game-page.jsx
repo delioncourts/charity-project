@@ -2,16 +2,16 @@ import Card from "../../components/app/card";
 import styles from "./game-page.module.css";
 import { useEffect, useState } from "react";
 
-const img1 = "../../../public/cards/icon_1.png";
-const img2 = "../../../public/cards/icon_2.png";
-const img3 = "../../../public/cards/icon_3.png";
-const img4 = "../../../public/cards/icon_4.png";
-const img5 = "../../../public/cards/icon_5.png";
-const img6 = "../../../public/cards/icon_6.png";
-const img7 = "../../../public/cards/icon_7.png";
-const img8 = "../../../public/cards/icon_8.png";
+import img1 from "../../../public/cards/icon_1.png";
+import img2 from "../../../public/cards/icon_2.png";
+import img3 from "../../../public/cards/icon_3.png";
+import img4 from "../../../public/cards/icon_4.png";
+import img5 from "../../../public/cards/icon_5.png";
+import img6 from "../../../public/cards/icon_6.png";
+import img7 from "../../../public/cards/icon_7.png";
+import img8 from "../../../public/cards/icon_8.png";
 
-const cover = "../../../public/cover.png";
+import cover from "../../../public/cover.png";
 
 const allCards = [
   { src: img1, matched: false },

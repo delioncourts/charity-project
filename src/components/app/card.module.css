@@ -5,6 +5,8 @@
 .card .front {
   transform: rotateY(90deg);
   position: absolute;
+  background-color: #fff;
+  padding: 18px;
 }
 
 .flipped .front {

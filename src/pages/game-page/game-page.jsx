@@ -85,6 +85,7 @@ const GamePage = () => {
   return (
     <div className={styles.main}>
       <h1 className={styles.name}>Memory Game</h1>
+
       <div className={styles.cards_container}>
         {/* <div className={styles.white_rectangle}></div>
         <div className={styles.blue_rectangle}></div> */}
@@ -100,7 +101,7 @@ const GamePage = () => {
           />
         ))}
       </div>
-      <p className={styles.moves}>Moves made: {moves}</p>
+      <p className={styles.moves}>Сделано ходов: {moves}</p>
       <button className={styles.btn_start} onClick={shuffleCards}>
         <img src="../../../public/Vector.png"></img>
       </button>

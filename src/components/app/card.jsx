@@ -9,7 +9,7 @@ const Card = ({ card, cover, handleCompare, flipped }) => {
   return (
     <div className={styles.card}>
       <div className={`${flippedCard}`}>
-        <img className={styles.front} src={card.src} alt="card front"></img>
+        <img className={styles.front} src={card.src} alt="карточка"></img>
         <img
           className={styles.cover}
           src={cover}
